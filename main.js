@@ -14,6 +14,11 @@ FormularioEstudiantes.addEventListener("submit", function(event){
     let estudiantes = [
         {Nombre: NombreEstudiantes, Edad: EdadEstudiantes, Cedula: CedulaEstudiantes,}
     ]
+
+    const estudiantesJson = JSON.stringify(estudiantes);
+    localStorage.setItem(estudiantes.Cedula, estudiantesJson)
+
+    console.log(JSON.parse(localStorage.getItem(estudiantes.Nombre)))
     console.log(estudiantes)
 })
 
