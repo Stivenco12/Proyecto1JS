@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <div class="">
+        <form id="FormularioEstudiantes">
+            <label for="nombre">cual es el nombre del estudiante: </label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="edad"> cual es la edad del estudiante: </label>
+            <input type="number" name="edad" id="edad">
+            <br>
+            <label for="cedula">cual es la cedula del estudiante: </label>
+            <input type="text" name="cedula" id="cedula">
+            <br>
+            <input type="submit" value="enviar">
+        </form>
+    </div>
+
+    <div class="">
+        <form id="FormularioBuscarEstudiantes">
+            <label for="cedula">ingrese el numero de cedula del estudiante: </label>
+            <input type="text" name="cedula" id="cedula">
+            <br>
+            <input type="submit" value="enviar">
+
+            <div id="MostrarNombre"></div>
+            <div id="MostrarEdad"></div>
+            <div id="MostrarCedula"></div>
+            <div id="MostrarNota"></div>
+        </form>
+    </div>
+
+    <div>
+        <form id="AgregarNota">
+            <label for="nota">ingrese una nota al estudiante: </label>
+            <input type="number" name="nota" id="nota">
+            <br>
+            <input type="submit" value="enviar">
+        </form>
+    </div>
+
+</body>
+</html>
